@@ -1,0 +1,86 @@
+version: 4.0.79
+steps:
+  - prompt: Click on "Create account."
+    commands:
+      - command: hover-text
+        text: Create account
+        description: button to create a new account
+        action: click
+  - prompt: Assert that a sign-up form appears.
+    commands:
+      - command: assert
+        expect: the "Create your account" form is visible
+  - prompt: Complete the form with test data and proceed.
+    commands:
+      - command: hover-text
+        text: Name
+        description: name field in the form
+        action: click
+      - command: type
+        text: Test User
+      - command: hover-text
+        text: Phone
+        description: phone field in the form
+        action: click
+      - command: type
+        text: 1234567890
+      - command: hover-text
+        text: Month
+        description: month dropdown in the form
+        action: click
+      - command: type
+        text: January
+      - command: hover-text
+        text: Day
+        description: day dropdown in the form
+        action: click
+      - command: type
+        text: 1
+      - command: hover-text
+        text: Year
+        description: year dropdown in the form
+        action: click
+      - command: type
+        text: 2000
+      - command: hover-text
+        text: Next
+        description: next button to proceed
+        action: click
+  - prompt: Complete the form with test data and proceed.
+    commands:
+      - command: hover-text
+        text: Use email instead
+        description: link to switch to email input
+        action: click
+      - command: hover-text
+        text: Email
+        description: email field in the form
+        action: click
+      - command: type
+        text: test@example.com
+      - command: hover-text
+        text: Next
+        description: next button to proceed
+        action: click
+  - prompt: Complete the form with test data and proceed.
+    commands:
+      - command: hover-text
+        text: Phone
+        description: phone field in the form
+        action: click
+      - command: type
+        text: 9876543210
+      - command: hover-text
+        text: Use email instead
+        description: switch to email input
+        action: click
+      - command: hover-text
+        text: Email
+        description: email field in the form
+        action: click
+      - command: type
+        text: newtest@example.com
+      - command: hover-text
+        text: Next
+        description: next button to proceed
+        action: click
