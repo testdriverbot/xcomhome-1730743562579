@@ -1,0 +1,16 @@
+version: 4.0.79
+steps:
+  - prompt: Assert that the webpage loads and the logo shows.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: assert
+        expect: the logo is visible on the webpage
+  - prompt: >-
+      Assert that there are no errors on the page.  # Use the content of the
+      file from the environment
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: assert
+        expect: there are no visible error messages on the webpage
