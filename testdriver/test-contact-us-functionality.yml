@@ -1,0 +1,22 @@
+version: 4.0.79
+steps:
+  - prompt: Find and click on "Contact Us."
+    commands:
+      - command: scroll-until-text
+        text: Contact Us
+        direction: down
+  - prompt: Find and click on "Contact Us."
+    commands:
+      - command: hover-text
+        text: Contact Us
+        description: link in the footer
+        action: click
+  - prompt: Find and click on "Contact Us."
+    commands:
+      - command: scroll-until-text
+        text: Contact Us
+        direction: down
+      - command: hover-text
+        text: Contact Us
+        description: link in the footer
+        action: click
