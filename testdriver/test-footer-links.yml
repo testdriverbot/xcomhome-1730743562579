@@ -1,0 +1,40 @@
+version: 4.0.79
+steps:
+  - prompt: Scroll down to the footer.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Click a footer link.
+    commands:
+      - command: hover-text
+        text: Privacy Policy
+        description: footer link
+        action: click
+  - prompt: Assert that the correct page shows.
+    commands:
+      - command: assert
+        expect: Welcome to x.com! is visible
+  - prompt: >-
+      Navigate back to the homepage.  # Use the content of the file from the
+      environment
+    commands:
+      - command: press-keys
+        keys:
+          - alt
+          - left
+  - prompt: >-
+      Navigate back to the homepage.  # Use the content of the file from the
+      environment
+    commands:
+      - command: press-keys
+        keys:
+          - alt
+          - left
+  - prompt: >-
+      Navigate back to the homepage.  # Use the content of the file from the
+      environment
+    commands:
+      - command: press-keys
+        keys:
+          - alt
+          - left
