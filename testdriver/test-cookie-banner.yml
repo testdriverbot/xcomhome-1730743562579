@@ -1,0 +1,27 @@
+version: 4.0.79
+steps:
+  - prompt: Assert if a cookie banner appears.
+    commands:
+      - command: scroll-until-text
+        text: Cookie Use
+        direction: down
+      - command: assert
+        expect: cookie banner is visible
+  - prompt: Click to accept or manage cookies.
+    commands:
+      - command: hover-text
+        text: Cookie Use
+        description: link in the footer related to cookies
+        action: click
+  - prompt: Click to accept or manage cookies.
+    commands:
+      - command: hover-text
+        text: Accept Cookies
+        description: button to accept cookies
+        action: click
+  - prompt: Click to accept or manage cookies.
+    commands:
+      - command: hover-text
+        text: Accept Cookies
+        description: button to accept cookies
+        action: click
