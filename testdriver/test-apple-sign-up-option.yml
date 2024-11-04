@@ -1,0 +1,12 @@
+version: 4.0.79
+steps:
+  - prompt: Click on "Sign up with Apple."
+    commands: []
+  - prompt: Assert that an Apple login prompt appears.
+    commands: []
+  - prompt: Complete the Apple login and proceed.
+    commands: []
+  - prompt: >-
+      Assert successful sign-up or onboarding message.  # Use the content of the
+      file from the environment
+    commands: []
