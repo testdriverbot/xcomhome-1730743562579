@@ -1,0 +1,18 @@
+version: 4.0.79
+steps:
+  - prompt: Find and hover over the navigation menu.
+    commands:
+      - command: hover-image
+        description: X logo in the top left corner
+        action: hover
+  - prompt: Find and hover over the navigation menu.
+    commands:
+      - command: hover-text
+        text: About
+        description: link in the footer
+        action: hover
+  - prompt: Find and hover over the navigation menu.
+    commands:
+      - command: hover-image
+        description: three horizontal lines icon in the top right corner
+        action: hover
